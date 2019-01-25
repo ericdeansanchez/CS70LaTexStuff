@@ -1,0 +1,137 @@
+% my template for CS70 Spring 2019
+\documentclass{article}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{textcomp}
+\usepackage{graphicx}
+\usepackage[mathscr]{euscript}
+\let\euscr\mathscr \let\mathscr\relax% just so we can load this and rsfs
+\usepackage[scr]{rsfso}
+\newcommand{\powerset}{\raisebox{.15\baselineskip}{\Large\ensuremath{\wp}}}
+% for making real R's
+\newcommand{\R}{\mathbb{R}}
+% for making really rational Q's
+\newcommand{\Q}{\mathbb{Q}}
+% for making integerZ
+\newcommand{\Z}{\mathbb{Z}}
+% for making really natural N's
+\newcommand{\N}{\mathbb{N}}
+% for making cool P's, probably
+\newcommand{\PP}{\mathbb{P}}
+% for making E's, I expect?
+\newcommand{\E}{\mathbb{E}}
+% for keeping tabs
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+% for titles, i.e. CS70 Spring 3043 HW1024
+\title{CS 70 Semester YYYY HW 00}
+
+% for authors
+\author{Author Name}
+
+% we begin, with a document
+\begin{document}
+
+\maketitle
+
+\section*{Sundry}
+
+\section{A Title}
+
+% enumeration via lower case letters
+\begin{enumerate}[label=(\alph*)]
+\item{
+    Some CS70 stuff... \newline
+    \tab Some tab stuff also...
+
+    % equations
+    \begin{equation}
+        % I have used \text as to avoid actual equations
+        \PP[r] = \text{obably something cool...}
+    \end{equation}
+
+    % fractions
+    \begin{equation}
+        \frac{1}{2}
+    \end{equation}
+
+    Hey, let's use a $\Rightarrow$ because those are cool too.
+}
+\item{
+    
+    % inline equations
+    We can also do a little bit of $S_u B_s\text{cripting}$.
+}
+\end{enumerate}
+
+\section{Another Title}
+\begin{enumerate}[label=(\alph*)]
+\item{
+    For sure getting full credit on this one. 
+}
+
+\item{
+    % a little something and superscripting
+    \begin{equation}
+        \sum_{i = 0}^{n} = \text{thing}
+    \end{equation}
+}
+\item{
+    Would you just look at this inequality $|X - 11| \geq 33$, By the Chevy Chase inequality
+    this is true.
+}
+\end{enumerate}
+
+\section{This One Is About Nesting Some Items And Stuff}
+\begin{enumerate}[label=(\alph*)]
+\item{
+    \begin{enumerate}[label=(\roman*)]
+    \item{
+        \begin{equation*}
+            2 + 2 = 4
+        \end{equation*}
+
+        \begin{equation*}
+            4 + 4 = 8
+        \end{equation*}
+    }
+    \item{
+        \begin{equation*}
+            4 - 3 = 1
+        \end{equation*}
+        But also,
+        \begin{equation*}
+            3 - 4 = -1
+        \end{equation*}
+    }
+    \end{enumerate}
+}
+\end{enumerate}
+
+\section{Last Title}
+\begin{enumerate}[label=(\alph*)]
+\item{
+    Just a regular item.
+}
+\item{
+    Given cows that say $\mu  < \epsilon$ we have that,
+
+    \begin{equation}
+        \epsilon > \text{the knights that say ni}
+    \end{equation}
+}
+\end{enumerate}
+
+% throw a little * on that section to get rid of
+% the numbers, if you're into that kind of thing.
+\section*{Wait, One More}
+\begin{enumerate}[label=(\alph*)]
+\item{
+    I hope that this helps, \newline
+    % oh yeah, you might want to include some graphics/images/whatever
+    \includegraphics[width=10cm, height=10cm]{graphic.png}
+    Cheers.
+}
+\end{enumerate}
+\end{document}
